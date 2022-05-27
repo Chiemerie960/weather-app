@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style/style.css">
+  <title>Weather</title>
+</head>
+
+<body>
+  <section class="center">
+    <div class="top-banner">
+      <nav class="nav">
+        <h1 class="logo">weather app</h1>
+      </nav>
+      <div class="span">
+        <h3 class="span1">⚠ please search for only two cities before refresh</h3>
+        <h3 class="span2">⚠ please search for only four cities before refresh</h3>
+      </div>
+
+      <button class="button" onclick="reset()">clear workspace</button>
+      <div class="container">
+        <form class="form-group">
+          <input type="text" placeholder=" " autofocus autocomplete="off">
+          <label for="name">search for a city</label>
+          <span class="msg"></span>
+        </form>
+      </div>
+    </div>
+    <div class="ajax-section">
+      <div class="container">
+        <ul class="cities"></ul>
+      </div>
+    </div>
+  </section>
+  <script src="./js/index.js"></script>
+</body>
+
+</html>
